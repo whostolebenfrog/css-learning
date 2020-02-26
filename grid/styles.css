@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.one { background-color: #BEEBE9 }
+.two { background-color: #F4DADA }
+.three { background-color: #FFB6B9 }
+.four { background-color: #F6EEC7 }
+.five { background-color: #FFE75E }
+.six { background-color: #BAF1A1 }
+
+
+.wrapper {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  line-height: 100px;
+  margin: 50px auto;
+  width: 350px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+
+.wrapper > div {
+  border: 2px solid white;
+}
+
+.one {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.three {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.four {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
